@@ -1,0 +1,180 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>personal portfolio</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <!-- navbar  -->
+<nav class="navbar">
+    <h1 class="brand">portfolio</h1>
+    <div class="toggle-btn">
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="links-container">
+        <li class="links-item"><a href="#" class="link active">home</a></li>
+        <li class="links-item"><a href="#projects" class="link">projects</a></li>
+        <li class="links-item"><a href="#about-section" class="link">about</a></li>
+    </ul>
+</nav>
+
+<section class="home">
+    <div class="hero-content">
+        <h1 class="hero-heading"><span class="highlight">hi, </span>i am Gatwiri</h1>
+        <p class="profession">fronted web developer learning android development</p>
+        <p class="info"> I love solving problems using Software development and represent Data in a meaningful way. Also, I like pushing myself and taking up new challenges.</p>
+        <a href="#contact-section" class="btn">contact</a>
+    </div>
+    <img src="img/valen.jpg" class="image" alt=""
+    style="height: 450px;width: 250px;">
+</section>
+<!-- about section -->
+<section class="about" id="about-section">
+    <h2 class="heading">about <span class="highlight">me</span></h2>
+    <p class="sub-heading">I'm a Software Engineer based in kenya. I am always ready to have new experiences, meet new people and learn new things. I find the idea to create value for people and impacting the world through my work gratifying. A learner with great passion in technology.A creative writer who likes to write articles .When am not developing and building things,you can find me on youtube or other sites learning,writing an article,watching anime but most of the times am working on my projects</p>
+    <div class="seperator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="img/valent.jpg" class="about-image" alt=""
+            style="width: 400px;height: 400px;">
+        </div>
+        <div class="right-col">
+            <p class="about-para">I am also a freelancer open to web projects/mobile projects.I am open to collaboration too😊 .Having a project and do not know who to contact? Relax am here for you.Lets showcase your business/skills online. </p>
+            <a href="https://us.docworkspace.com/d/sIA--tORX6puPiQY" target="_blank"class="btn">download cv</a>
+        </div>
+    </div>
+</section>
+<section class="about" id="about-section">
+    <!--previous elements-->
+<h2 class="heading">languages and framework i know</h2>
+  <div class="seperator"></div>
+  <div class="skill-container">
+      <div class="skill-card" style="--bg: #f06529">
+          <p class="skill">HTML</p>
+      </div>
+      <div class="skill-card" style="--bg: #379ad6">
+          <p class="skill">CSS</p>
+      </div>
+      <div class="skill-card" style="--bg: #cc6699">
+          <p class="skill">SCSS</p>
+      </div>
+      <div class="skill-card" style="--bg: #f7df1e">
+          <p class="skill">JavaScript</p>
+      </div>
+      <div class="skill-card large" style="--bg: #5ed9fb">
+          <p class="skill">ReactJS</p>
+      </div>
+      <div class="skill-card large" style="--bg: #83cd29">
+          <p class="skill">NodeJS</p>
+      </div>
+      <div class="skill-card" style="--bg: #326690">
+          <p class="skill">Kotlin</p>
+      </div>
+      <div class="skill-card" style="--bg: #ffa000">
+          <p class="skill">Firebase</p>
+      </div>
+      <div class="skill-card large" style="--bg: #5ed9fb">
+          <p class="skill">Much More</p>
+      </div>
+  </div>
+</section>
+<!-- project section -->
+<h2 class="heading">Project<span class="highlight">s</span></h2>
+<p class="sub-heading">Here are few of my projects with some of the frameworks I use in development. </p>
+<div class="seperator"></div>
+<section id="projects">
+    <div class="project-tile">
+      <img src="img/mvvm todo.jpg" alt="Todo-list">
+      <a href="https://github.com/1-creator/Todo-List-App-MVVM-Kotlin">Todo-list(code)</a>
+    </div>
+    <div class="project-tile">
+      <img src="img/book flutter.jpg" alt="e-book">
+      <a href="https://play.google.com/store/apps/details?id=com.vale.ebooks">e-book flutter(app)</a>
+    </div>
+    <div class="project-tile">
+      <img src="img/visual.jpg" alt="visualization">
+      <a href="https://codepen.io/1-creator/pens/public">Visualization projects</a>
+    </div>
+    <div class="project-tile">
+      <img src="img/shopk.jpg" alt="shopping list">
+      <a href="https://github.com/1-creator/shopping-basket">shopping list(kotlin-code)</a>
+    </div>
+    <div class="project-tile">
+      <img src="img/shop j.jpg" alt="shop">
+      <a href="https://github.com/1-creator/grocery-cart">shopping-basket(javascript-code)</a>
+    </div>
+    <div class="project-tile">
+        <img src="img/vote.jpg" alt="vote">
+        <a href="https://github.com/1-creator/simple-voting-system">simple-voting-system(javascript-code)</a>
+      </div>
+  </section>
+  
+                
+<!-- contact form -->
+<section class="contact" id="contact-section">
+    <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+    <p class="sub-heading">Lets connect. </p>
+    <div class="seperator"></div>
+
+    <form method="GET" action="mailto:johnsvale7@gmail.com" enctype="text/plain">
+        <div class="contact-form" >subject
+        <input type="text" name="subject" />
+        </div>
+        <div class="contact-form" >Name
+        <input name="Name" />
+        </div>
+        <div class ="contact-form">E-mail
+        <input name="E-Mail Address" />
+    </div>
+    <textarea class="message" placeholder="message" required></textarea>
+        <br/>
+        <button class="btn contact-btn">contact me</button>
+        <input type="hidden" name="body" />
+
+    </form>
+    
+    <script>
+       var form = document.getElementsByTagName('form')[0];
+       form.addEventListener('submit',contact,false);
+       function contact(e) {
+          // Prevent Default Form Submission
+          e.preventDefault();
+    
+          var target = e.target || e.srcElement;
+          var i = 0;
+          var message = '';
+    
+          // Loop Through All Input Fields
+          for(i = 0; i < target.length; ++i) {
+             // Check to make sure it's a value. Don't need to include Buttons
+             if(target[i].type != 'text' && target[i].type != 'textarea') {
+                    // Skip to next input since this one doesn't match our rules
+                continue;
+             }
+    
+             // Add Input Name and value followed by a line break
+             message += target[i].name + ': ' + target[i].value + "\r\n";
+          }
+          // Modify the hidden body input field that is required for the mailto: scheme
+          target.elements["body"].value = message;
+    
+          // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+          this.submit();
+       }
+    </script>
+    
+<footer class="footer"> made with love by Gatwiri </footer>
+
+
+<script src="project.js"></script>
+<script src="app.js"></script>
+
+
+   <script src="app.js"></script> 
+ </body>
+ </html>
