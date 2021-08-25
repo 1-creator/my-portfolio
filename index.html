@@ -121,53 +121,25 @@
     <p class="sub-heading">Lets connect. </p>
     <div class="seperator"></div>
 
-    <form method="POST" action="https://formspree.io/f/mjvjpqev" enctype="text/plain" target="_blank">
-        <div class="contact-form" >subject
-        <input type="text" name="subject" />
-        </div>
-        <div class="contact-form" >Name
-        <input name="Name" />
-        </div>
-        <div class ="contact-form">E-mail
-        <input name="E-Mail Address" />
-    </div>
-    <textarea class="message" placeholder="message" required></textarea>
-        <br/>
-        <button class="btn contact-btn">contact me</button>
-        <input type="hidden" name="body" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<form action="https://formspree.io/f/mjvjpqev" method="post">
+<input name="_gotcha" style="display: none" type="text">
+<div class="contact-form">Name<input name="name" placeholder=" Name" id="name" required type="text">
+</div>
+<div class="contact-form">Topic<input name="topic" placeholder="topic" id="topic" required type="text">
+</div>
+    <div class ="contact-form">E-mail
+    <input name="E-Mail Address" required placeholder="email" />
+</div>
+<textarea class="message" placeholder="message" required></textarea>
+    <br/>
+    <button class="btn contact-btn" type="submit">contact me</button>
+    <input type="hidden" name="referrer" id="referrer_field" />
 
-    </form>
-    
-    <script>
-       var form = document.getElementsByTagName('form')[0];
-       form.addEventListener('submit',contact,false);
-       function contact(e) {
-          // Prevent Default Form Submission
-          e.preventDefault();
-    
-          var target = e.target || e.srcElement;
-          var i = 0;
-          var message = '';
-    
-          // Loop Through All Input Fields
-          for(i = 0; i < target.length; ++i) {
-             // Check to make sure it's a value. Don't need to include Buttons
-             if(target[i].type != 'text' && target[i].type != 'textarea') {
-                    // Skip to next input since this one doesn't match our rules
-                continue;
-             }
-    
-             // Add Input Name and value followed by a line break
-             message += target[i].name + ': ' + target[i].value + "\r\n";
-          }
-          // Modify the hidden body input field that is required for the mailto: scheme
-          target.elements["body"].value = message;
-    
-          // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-          this.submit();
-       }
-    </script>
-    
+    <input type="hidden" name="body" />
+
+</section>
+
 <footer class="footer"> made with love by Gatwiri </footer>
 
 

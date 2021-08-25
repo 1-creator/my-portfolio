@@ -181,7 +181,7 @@ body{
 
 .seperator{
     width: 25%;
-    margin: 20px auto;
+    margin: 30px auto;
     position: relative;
 }
 
@@ -335,7 +335,6 @@ body{
     background: #000;
     color: #fff;
     outline: none;
-    text-transform: capitalize;
     resize: none;
 }
 
