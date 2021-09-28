@@ -461,24 +461,6 @@ body{
         grid-column: 1 span !important;
     }
 }
-/* youtube link */
-.youtube{
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  width: 160px;
-  text-align: center;
-  padding: 15px 10px;
-  background: #bb0000;
-  border-radius: 5px;
-}
-
-.youtube a{
-  text-decoration: none;
-  color: #fff;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-}
 
 /* mobile view */
 @media (max-width: 500px){
