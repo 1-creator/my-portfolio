@@ -24,7 +24,7 @@ body{
     left: 0;
     width: 100%;
     height: 60px;
-    background: #1d1d1d;
+    background: black;
     padding: 0 10vw;
     display: flex;
     justify-content: space-between;
